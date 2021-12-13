@@ -4,6 +4,6 @@ provider "signalfx" {
 }
 
 module "TestModule" {
-  source     = "./Test Module"
+  source     = "./TestModule"
   sfx_prefix = var.sfx_prefix
 }
