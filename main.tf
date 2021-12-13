@@ -3,7 +3,7 @@ provider "signalfx" {
   api_url    = "https://api.${var.realm}.signalfx.com"
 }
 
-module "Test Module" {
+module "TestModule" {
   source     = "./Test Module"
   sfx_prefix = var.sfx_prefix
 }
