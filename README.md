@@ -14,7 +14,7 @@ This repo is collection of Terraform files to spin up these resources in an Obse
 This project follows a Terraform pattern that builds a "root" module that simply calls other sub-modules.  With the limited set of resources in this project, everything here _could_ just go into flat file.  The design on this sample project, however, hints at what a multi-module, complex Terraform plan might look like. For more information on Terraform's module structure, see the tutorials [here](https://learn.hashicorp.com/collections/terraform/modules).
 
 ### Variables
-This project is not intended as a deep dive into Terraform.  However, it's worth noting that this sample project uses Terraform variables.  Variables are used in any place that the `realm`, `access_token` and `sfx_prefix`  are required by the Splunk/SignalFx provider resource or dashboard and chart resources. The `sfx_prefix` is simply an arbitrary value that's helpful to prefix Terraform-created resources in a shared sandbox or demo environment.
+This project is not intended as a deep dive into Terraform.  However, it's worth noting that this sample project uses Terraform variables.  Variables are used in any place that the `realm`, `access_token` variables are required by the Splunk/SignalFx provider resource or dashboard and chart resources. The `sfx_prefix` is simply an arbitrary value that's helpful to prefix Terraform-created resources in a shared sandbox or demo environment.
 
 ## Deploying The Resources
 1. [Install Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) on a machine that will execute the Terraform plan.
